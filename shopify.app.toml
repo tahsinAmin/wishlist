@@ -1,7 +1,7 @@
 # Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
 
 client_id = "f64ecc5c214f8224c8efc6e0ffeb331d"
-application_url = "https://source-quickly-trend-bulk.trycloudflare.com"
+application_url = "https://layout-xml-challenged-newspapers.trycloudflare.com"
 embedded = true
 name = "wishlist"
 handle = "wishlist-659"
@@ -23,9 +23,9 @@ scopes = "write_products"
 
 [auth]
 redirect_urls = [
-  "https://source-quickly-trend-bulk.trycloudflare.com/auth/callback",
-  "https://source-quickly-trend-bulk.trycloudflare.com/auth/shopify/callback",
-  "https://source-quickly-trend-bulk.trycloudflare.com/api/auth/callback"
+  "https://layout-xml-challenged-newspapers.trycloudflare.com/auth/callback",
+  "https://layout-xml-challenged-newspapers.trycloudflare.com/auth/shopify/callback",
+  "https://layout-xml-challenged-newspapers.trycloudflare.com/api/auth/callback"
 ]
 
 [pos]
