@@ -1,7 +1,7 @@
 # Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
 
 client_id = "f64ecc5c214f8224c8efc6e0ffeb331d"
-application_url = "https://legs-losing-committed-gs.trycloudflare.com"
+application_url = "https://slim-desperate-iceland-gdp.trycloudflare.com"
 embedded = true
 name = "wishlist"
 handle = "wishlist-659"
@@ -23,9 +23,9 @@ scopes = "write_products"
 
 [auth]
 redirect_urls = [
-  "https://legs-losing-committed-gs.trycloudflare.com/auth/callback",
-  "https://legs-losing-committed-gs.trycloudflare.com/auth/shopify/callback",
-  "https://legs-losing-committed-gs.trycloudflare.com/api/auth/callback"
+  "https://slim-desperate-iceland-gdp.trycloudflare.com/auth/callback",
+  "https://slim-desperate-iceland-gdp.trycloudflare.com/auth/shopify/callback",
+  "https://slim-desperate-iceland-gdp.trycloudflare.com/api/auth/callback"
 ]
 
 [pos]
