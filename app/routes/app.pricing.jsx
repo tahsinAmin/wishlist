@@ -11,34 +11,49 @@ import {
 import { TitleBar } from "@shopify/app-bridge-react";
 
 export default function PricingPage() {
+
+  let products = [
+    { name: "Product 1", price: 27.72 },
+    { name: "Product 2", price: 94.2 },
+    { name: "Product 3", price: 34.97 },
+    { name: "Product 4", price: 85.87 },
+    { name: "Product 5", price: 85.39 },
+    { name: "Product 6", price: 10.97 },
+    { name: "Product 7", price: 87.36 },
+    { name: "Product 8", price: 97.6 },
+    { name: "Product 9", price: 66.91 },
+    { name: "Product 10", price: 11.45 }
+  ];
+
   return (
     <Page>
       <TitleBar title="Pricing Page" />
       <Layout>
         <Layout.Section>
-          <Card>
-            <BlockStack gap="300">
-              <Text as="p" variant="bodyMd">
-                The app template comes with an additional page which
-                demonstrates how to create multiple pages within app navigation
-                using{" "}
-                <Link
-                  url="https://shopify.dev/docs/apps/tools/app-bridge"
-                  target="_blank"
-                  removeUnderline
-                >
-                  App Bridge
-                </Link>
-                .
-              </Text>
-              <Text as="p" variant="bodyMd">
-                To create your own page and have it show up in the app
-                navigation, add a page inside <Code>app/routes</Code>, and a
-                link to it in the <Code>&lt;NavMenu&gt;</Code> component found
-                in <Code>app/routes/app.jsx</Code>.
-              </Text>
-            </BlockStack>
-          </Card>
+            {products.map((product, index) => (
+               <Card key={index}>
+                <BlockStack gap="300">
+                <Text as="p" variant="bodyMd">
+                  {product.name}
+                  <Link
+                    url="https://shopify.dev/docs/apps/tools/app-bridge"
+                    target="_blank"
+                    removeUnderline
+                  >
+                    App Bridge
+                  </Link>
+                  .
+                </Text>
+                <Text as="p" variant="bodyMd">
+                  To create your own page and have it show up in the app
+                  navigation, add a page inside <Code>app/routes</Code>, and a
+                  link to it in the <Code>&lt;NavMenu&gt;</Code> component found
+                  in <Code>app/routes/app.jsx</Code>.
+                </Text>
+              </BlockStack>
+            </Card>
+            ))}
+          
         </Layout.Section>
         <Layout.Section variant="oneThird">
           <Card>

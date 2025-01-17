@@ -372,7 +372,26 @@ If we give the ionit then all tables will be created but we just need one new ta
 - Prisma commands
 `https://www.prisma.io/docs/orm/reference/prisma-client-reference#findfirst`
 
+- to see tables in browser
+`npm run prisma studio`
+
 
 # Learn
 - 17 Jan 2025
   - upsert command, where you create data if not present.
+
+
+# 16 - Shopify App Embed and App Block Explained
+
+## Build theme app
+
+https://shopify.dev/docs/apps/build/online-store/theme-app-extensions/build
+
+## Editor
+
+- https://admin.shopify.com/store/tahsin-app-dev/themes/141480624268/editor?previewPath=%2Fproducts%2Fthe-collection-snowboard-hydrogen
+
+## Extensions
+
+https://partners.shopify.com/4075600/apps/208184967169/extensions
+
