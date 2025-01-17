@@ -360,3 +360,19 @@ This template uses [Remix](https://remix.run). The following Shopify tools are a
 - [App extensions](https://shopify.dev/docs/apps/app-extensions/list)
 - [Shopify Functions](https://shopify.dev/docs/api/functions)
 - [Getting started with internationalizing your app](https://shopify.dev/docs/apps/best-practices/internationalization/getting-started)
+
+
+
+# Prisma
+- https://www.prisma.io/docs/getting-started/quickstart-sqlite
+
+- `npm run prisma migrate dev -- --name create-settings-table`
+If we give the ionit then all tables will be created but we just need one new table
+
+- Prisma commands
+`https://www.prisma.io/docs/orm/reference/prisma-client-reference#findfirst`
+
+
+# Learn
+- 17 Jan 2025
+  - upsert command, where you create data if not present.
