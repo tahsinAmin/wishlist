@@ -1,9 +1,7 @@
-<!-- https://youtu.be/AI5BeOOw0Ow?t=1 -->
+# TODO
+- https://polaris.shopify.com/components/selection-and-input/combobox?example=combobox-with-multi-select
 
-2025.02.01
-- Now it has become an importance to fix things in my room. Before I'd be satisfied with anything given to me.
 
-2025.01.
 
 # Shopify App Template - Remix
 

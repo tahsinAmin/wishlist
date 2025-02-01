@@ -2,36 +2,67 @@ import { json } from "@remix-run/node";
 import db from "../db.server";
 import { cors } from 'remix-utils/cors';
 
-// https://youtu.be/Mfe0oc8DUz0?t=190
 
-export async function loader() {
-    return json({ ok: true,
-        message: "Hello, world!" });
+
+
+export async function loader({ request }) {
+    const url = new URL(request.url);
+    const customerId = url.searchParam.get("customerId");
+    const shop = url.searchParam.get("shop");
+    const productId = url.searchParam.get("productId");
+
+
+    if (!customerId || !productId || !shop) {
+        return json({
+            message: "Missing data. Required data: customerId, productId, shop",
+            method: "GET"
+        });
+    }
+
+
+    const wishlist = await db.wishlist.findMany({
+        where: {
+            customerId: customerId,
+            shop: shop,
+            productId: productId,
+        },
+    });
+
+
+    const response = json({
+        ok: true,
+        message: "Success",
+        data: wishlist
+    });
+
+    return cors(request, response)
 }
 
+
+
+
+
 export async function action({ request }) {
-    const method = request.method;
 
     let data = await request.formData();
     data = Object.fromEntries(data);
     const customerId = data.customerId;
     const productId = data.productId;
     const shop = data.shop;
-
-    console.log("customerId =", customerId);
-    console.log("productId =", productId);
-    console.log("shop =", shop);
+    const _action = data._action;
 
 
     if (!customerId || !productId || !shop) {
         return json({
             message: "Missing data. Required data: customerId, productId, shop",
-            method: method
+            method: _action
         })
     }
 
-    switch(method) {
-        case "POST":
+    let response;
+
+    switch(_action) {
+        case "CREATE":
             const wishlist = await db.wishlist.create({
                 data: {
                     customerId,
@@ -40,15 +71,22 @@ export async function action({ request }) {
                 },
             });
 
-            const response = json({ message: "Product added to wishlist", method: "POST", wishlist });
+            response = json({ message: "Product added to wishlist", method: _action, wishlisted: true });
             return cors(request, response);
 
-        case "PUT":
-            return json({ message: "Successful",  method: "PUT" });
+        case "PATCH":
+            return json({ message: "Successful",  method: "PATCH" });
         case "DELETE":
-            return json({ message: "Successful",  method: "DELETE" });
+            await db.wishlist.deleteMany({
+                where: {
+                    customerId: customerId,
+                    shop: shop,
+                    productId: productId,
+                },
+            })
+            response = json({ message: "Product removed from your wishlist",  method: _action, wishlisted: false });
+            return cors(request, response);
         default:
-            return json({ ok: false,
-                message: "Method not supported" });
+            return new Response("Method not allowed", {status: 405});
     }
 }
