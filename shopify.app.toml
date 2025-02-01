@@ -1,7 +1,7 @@
 # Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
 
 client_id = "f64ecc5c214f8224c8efc6e0ffeb331d"
-application_url = "https://vienna-malpractice-align-condos.trycloudflare.com"
+application_url = "https://chicks-th-connector-suspension.trycloudflare.com"
 embedded = true
 name = "wishlist"
 handle = "wishlist-659"
@@ -23,9 +23,9 @@ scopes = "write_products"
 
 [auth]
 redirect_urls = [
-  "https://vienna-malpractice-align-condos.trycloudflare.com/auth/callback",
-  "https://vienna-malpractice-align-condos.trycloudflare.com/auth/shopify/callback",
-  "https://vienna-malpractice-align-condos.trycloudflare.com/api/auth/callback"
+  "https://chicks-th-connector-suspension.trycloudflare.com/auth/callback",
+  "https://chicks-th-connector-suspension.trycloudflare.com/auth/shopify/callback",
+  "https://chicks-th-connector-suspension.trycloudflare.com/api/auth/callback"
 ]
 
 [pos]

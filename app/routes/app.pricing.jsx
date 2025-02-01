@@ -13,16 +13,16 @@ import { TitleBar } from "@shopify/app-bridge-react";
 export default function PricingPage() {
 
   let products = [
-    { name: "Product 1", price: 27.72 },
-    { name: "Product 2", price: 94.2 },
-    { name: "Product 3", price: 34.97 },
-    { name: "Product 4", price: 85.87 },
-    { name: "Product 5", price: 85.39 },
-    { name: "Product 6", price: 10.97 },
-    { name: "Product 7", price: 87.36 },
-    { name: "Product 8", price: 97.6 },
-    { name: "Product 9", price: 66.91 },
-    { name: "Product 10", price: 11.45 }
+    { name: "Product 1", selected: false, price: 27.72 },
+    { name: "Product 2", selected: false, price: 94.2 },
+    { name: "Product 3", selected: false, price: 34.97 },
+    { name: "Product 4", selected: false, price: 85.87 },
+    { name: "Product 5", selected: false, price: 85.39 },
+    { name: "Product 6", selected: false, price: 10.97 },
+    { name: "Product 7", selected: false, price: 87.36 },
+    { name: "Product 8", selected: false, price: 97.6 },
+    { name: "Product 9", selected: false, price: 66.91 },
+    { name: "Product 10", selected: false, price: 11.45 }
   ];
 
   return (

@@ -1,3 +1,10 @@
+<!-- https://youtu.be/AI5BeOOw0Ow?t=1 -->
+
+2025.02.01
+- Now it has become an importance to fix things in my room. Before I'd be satisfied with anything given to me.
+
+2025.01.
+
 # Shopify App Template - Remix
 
 This is a template for building a [Shopify app](https://shopify.dev/docs/apps/getting-started) using the [Remix](https://remix.run) framework.
@@ -361,13 +368,38 @@ This template uses [Remix](https://remix.run). The following Shopify tools are a
 - [Shopify Functions](https://shopify.dev/docs/api/functions)
 - [Getting started with internationalizing your app](https://shopify.dev/docs/apps/best-practices/internationalization/getting-started)
 
+# Run Project
 
+Using npm:
+
+```shell
+npm run dev
+```
+
+# Open studio
+
+
+# Components
+- https://polaris.shopify.com/components/selection-and-input/checkbox
+
+# documentation
+- https://shopify.dev/docs/api/development-stores/generated-test-data#themes/?locale=en
+
+# Dos and Don'ts
+- https://polaris.shopify.com/patterns/common-actions/overview
+
+
+# Live 
+- https://tahsin-app-dev.myshopify.com/products/the-multi-managed-snowboard
+
+# Editor
+ - https://admin.shopify.com/store/tahsin-app-dev/themes/141480624268/editor
 
 # Prisma
 - https://www.prisma.io/docs/getting-started/quickstart-sqlite
 
 - `npm run prisma migrate dev -- --name create-settings-table`
-If we give the ionit then all tables will be created but we just need one new table
+If we give the init then all tables will be created but we just need one new table
 
 - Prisma commands
 `https://www.prisma.io/docs/orm/reference/prisma-client-reference#findfirst`
@@ -375,10 +407,17 @@ If we give the ionit then all tables will be created but we just need one new ta
 - to see tables in browser
 `npm run prisma studio`
 
+# Theme
+## 19. Make changes in Developemtn mode
+- shopify app dev --theme 141480624268
+
 
 # Learn
 - 17 Jan 2025
   - upsert command, where you create data if not present.
+
+## Need to Learn
+- How to catche about fetching api.
 
 
 # 16 - Shopify App Embed and App Block Explained
