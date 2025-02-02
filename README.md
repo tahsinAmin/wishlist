@@ -1,5 +1,16 @@
 # TODO
-- https://polaris.shopify.com/components/selection-and-input/combobox?example=combobox-with-multi-select
+- https://polaris.shopify.com/components/selection-and-input/combobox?example=combobox-with-multi-select-and-manual-selectiont
+- with Media
+-- https://polaris.shopify.com/components/lists/resource-item?example=resource-item-with-media
+-- https://polaris.shopify.com/components/lists/resource-list?example=resource-list-with-bulk-actions-and-many-items
+
+
+- Scrollable
+-- https://polaris.shopify.com/components/utilities/scrollable
+- Modal
+-- https://shopify.dev/docs/api/app-bridge-library/web-components/ui-modal
+
+
 
 
 
@@ -432,3 +443,21 @@ https://shopify.dev/docs/apps/build/online-store/theme-app-extensions/build
 
 https://partners.shopify.com/4075600/apps/208184967169/extensions
 
+# 21 - Shopify GraphQL basic with Remix app
+
+## Learn
+
+### Graphql
+- Writing the query is interesting
+- no commas needed
+
+# 22 - This Remix API is all you need for Shopify app
+
+# Graphql
+
+##  Basic understanding
+- https://shopify.dev/docs/api/admin-graphql
+
+# 23 - Shopify Billing & Pricing with Remix App APIs
+- Billing
+-- https://shopify.dev/docs/api/shopify-app-remix/v1/apis/billing
