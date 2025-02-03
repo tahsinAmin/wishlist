@@ -1,7 +1,7 @@
 # Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
 
 client_id = "f64ecc5c214f8224c8efc6e0ffeb331d"
-application_url = "https://nano-michael-pathology-production.trycloudflare.com"
+application_url = "https://temporarily-destroyed-behaviour-stuck.trycloudflare.com"
 embedded = true
 name = "wishlist"
 handle = "wishlist-659"
@@ -23,9 +23,9 @@ scopes = "write_products"
 
 [auth]
 redirect_urls = [
-  "https://nano-michael-pathology-production.trycloudflare.com/auth/callback",
-  "https://nano-michael-pathology-production.trycloudflare.com/auth/shopify/callback",
-  "https://nano-michael-pathology-production.trycloudflare.com/api/auth/callback"
+  "https://temporarily-destroyed-behaviour-stuck.trycloudflare.com/auth/callback",
+  "https://temporarily-destroyed-behaviour-stuck.trycloudflare.com/auth/shopify/callback",
+  "https://temporarily-destroyed-behaviour-stuck.trycloudflare.com/api/auth/callback"
 ]
 
 [pos]
