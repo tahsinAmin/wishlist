@@ -1,3 +1,9 @@
+# Video
+- https://drive.google.com/drive/folders/1IQ9O9lCmpXapENixo7mEsR9psS1XYiZ2
+
+# Live
+- https://tahsin-app-dev.myshopify.com/
+
 # TODO
 - https://polaris.shopify.com/components/selection-and-input/combobox?example=combobox-with-multi-select-and-manual-selectiont
 - with Media
